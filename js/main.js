@@ -23,6 +23,7 @@ const searchBook = () => {
         searchDetails.appendChild(error);
     }
     else {
+        // book archive api link fetch
         const url = `http://openlibrary.org/search.json?q=${searchInText}`
         // clear search field
         searchField.value = '';
@@ -33,9 +34,10 @@ const searchBook = () => {
 }
 
 const displayBook = books => {
+    // array filter method
     const booksArray = books.filter(element => element.cover_i !== undefined && element.title !== undefined && element.author_name !== undefined && element.publisher !== undefined && element.first_publish_year !== undefined)
 
-    // error handle 
+    // not search result msg
     if (booksArray.length === 0) {
         searchDetails.innerHTML = `Sorry, No Result Found ⚠️`
     }

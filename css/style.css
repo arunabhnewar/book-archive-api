@@ -23,6 +23,7 @@ body {
     color: bisque;
 }
 
+/*--------card item---------*/
 .item-card{
     height: auto;
 }
@@ -31,6 +32,8 @@ body {
     margin: 20px;
     background-color: #0a3d62;
 }
+
+/*----book title and text----------*/
 .title{
     color: #c8d6e5;
     text-align: left;

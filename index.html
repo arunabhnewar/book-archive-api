@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Archive</title>
+
+    <!-----bootstrap stylesheet------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!----custom css stylesheet------------>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!----header------------->
+    <header class="mt-5 mb-3">
+        <h2 class="text-center heading">Book Archive</h2>
+    </header>
+
+    <!-------main--------------->
+    <main>
+        <section class="container">
+            <!-----search field area----------->
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control" placeholder="Search by Book Name">
+                <button onclick="searchBook()" class="btn btn-outline-dark text-white" type="button">Search</button>
+            </div>
+
+        </section>
+
+        <section class="container">
+            <!------search result area-------->
+            <div class="row gy-3 mx-auto mt-5 g-3 detail-content">
+                <div id="search-details" class="col-12 d-flex justify-content-around flex-wrap item-card">
+                </div>
+                <!------error message-------->
+                <div id="error" class=""> </div>
+            </div>
+        </section>
+    </main>
+
+    <!-----footer------------->
+    <footer></footer>
+
+    <!------bootstrap js script----------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <!--------js script-------------->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
